@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameApp - Learning Platform</title>
+    <link rel="stylesheet" href="stddash.css">
+</head>
+<body>
+    <div class="floating-elements" id="floatingElements"></div>
+    <div class="overlay"></div>
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <button class="menu-toggle">☰</button>
+                <div class="logo">EduConnect</div>
+                <select id="Course-select" class="Course-select">
+                    <option value="cl6" selected>Class 6</option>
+                    <option value="cl6">Class 7</option>
+                    <option value="cl6">Class 8</option>
+                    <option value="cl6">Class 9</option>
+                    <option value="cl6">Class 10</option>
+                    <option value="Addclass">+ Add Class</option>
+                </select></div>
+            
+            <div class="header-actions">
+                <div class="header-icon">👤 Profile</div>
+                <div class="header-icon">⚙️ Settings</div>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="menu-item active" onclick="loadPage('dashboard')">
+                        <span class="menu-icon">🏠</span>
+                        Dashboard
+                </li>
+                <li class="menu-item" onclick="loadPage('learnmod')">
+                    <span class="menu-icon"  onclick="loadPage('learnmod')">📚</span>
+                        Learning Module
+                </li>
+                <li class="menu-item"   onclick="loadPage('quizzes')">
+                        <span class="menu-icon">📝</span>
+                        Quizzes
+                </li>
+                <li class="menu-item">
+                        <span class="menu-icon">🏆</span>
+                        Leaderboard
+                </li>
+                <li class="menu-item">
+                        <span class="menu-icon">❓</span>
+                        Help & Support
+                </li>
+                <li class="menu-item">
+                        <span class="menu-icon">📋</span>
+                        Test
+                </li>
+            </ul>
+           
+        </aside>
+
+        <main class="main-content" id="main-content">
+           
+        </main>
+    </div>
+ <script src="stddash.js"></script>
+</body>
+</html>

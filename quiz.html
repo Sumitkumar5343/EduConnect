@@ -1,0 +1,136 @@
+<div class="quiz-container">
+    <div class="quiz-header">
+        <h1 class="quiz-title">Quizzes</h1>
+        <div class="quiz-progress">Completed: 3/10</div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search quizzes..." id="searchInput">
+    </div>
+
+    <div class="quiz-grid" id="quizGrid">
+        <!-- Mathematics Quiz -->
+        <div class="quiz-card" data-subject="mathematics">
+            <div class="difficulty-badge difficulty-medium">Medium</div>
+            <h3 class="quiz-subject">Mathematics</h3>
+            <p class="quiz-description">Test your knowledge in algebra, geometry, calculus and mathematical reasoning
+            </p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>15</span></div>
+                <div class="quiz-stat">Duration: <span>20 min</span></div>
+                <div class="quiz-stat">Points: <span>150</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Mathematics')">Start Quiz</button>
+        </div>
+
+        <!-- Science Quiz -->
+        <div class="quiz-card" data-subject="science">
+            <div class="difficulty-badge difficulty-hard">Hard</div>
+            <h3 class="quiz-subject">Science</h3>
+            <p class="quiz-description">Explore physics, chemistry, biology and scientific method principles</p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>20</span></div>
+                <div class="quiz-stat">Duration: <span>25 min</span></div>
+                <div class="quiz-stat">Points: <span>200</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Science')">Start Quiz</button>
+        </div>
+
+        <!-- Technology Quiz -->
+        <div class="quiz-card" data-subject="technology">
+            <div class="difficulty-badge difficulty-easy">Easy</div>
+            <h3 class="quiz-subject">Technology</h3>
+            <p class="quiz-description">Computer science, programming concepts, and modern technology trends</p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>12</span></div>
+                <div class="quiz-stat">Duration: <span>15 min</span></div>
+                <div class="quiz-stat">Points: <span>120</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Technology')">Start Quiz</button>
+        </div>
+
+        <!-- Engineering Quiz -->
+        <div class="quiz-card" data-subject="engineering">
+            <div class="difficulty-badge difficulty-hard">Hard</div>
+            <h3 class="quiz-subject">Engineering</h3>
+            <p class="quiz-description">Mechanical, electrical, civil engineering principles and problem solving</p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>18</span></div>
+                <div class="quiz-stat">Duration: <span>30 min</span></div>
+                <div class="quiz-stat">Points: <span>180</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Engineering')">Start Quiz</button>
+        </div>
+
+        <!-- Statistics Quiz -->
+        <div class="quiz-card" data-subject="statistics">
+            <div class="difficulty-badge difficulty-medium">Medium</div>
+            <h3 class="quiz-subject">Statistics</h3>
+            <p class="quiz-description">Data analysis, probability, statistical methods and interpretation</p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>14</span></div>
+                <div class="quiz-stat">Duration: <span>22 min</span></div>
+                <div class="quiz-stat">Points: <span>140</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Statistics')">Start Quiz</button>
+        </div>
+
+        <!-- Physics Quiz -->
+        <div class="quiz-card" data-subject="physics">
+            <div class="difficulty-badge difficulty-hard">Hard</div>
+            <h3 class="quiz-subject">Physics</h3>
+            <p class="quiz-description">Mechanics, thermodynamics, electromagnetism and quantum physics</p>
+            <div class="quiz-stats">
+                <div class="quiz-stat">Questions: <span>16</span></div>
+                <div class="quiz-stat">Duration: <span>25 min</span></div>
+                <div class="quiz-stat">Points: <span>160</span></div>
+            </div>
+            <button class="start-quiz-btn" onclick="startQuiz('Physics')">Start Quiz</button>
+        </div>
+    </div>
+</div>
+<script>
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const quizCards = document.querySelectorAll('.quiz-card');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
+
+        quizCards.forEach(card => {
+            const subject = card.querySelector('.quiz-subject').textContent.toLowerCase();
+            const description = card.querySelector('.quiz-description').textContent.toLowerCase();
+
+            if (subject.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+                card.style.animation = 'fadeIn 0.3s ease';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+    // Start quiz function
+    function startQuiz(subject) {
+        // Add loading state
+        event.target.innerHTML = 'Loading...';
+        event.target.style.background = 'linear-gradient(135deg, #666 0%, #888 100%)';
+
+        setTimeout(() => {
+            alert(`Starting ${subject} Quiz!\n\nThis would redirect to the actual quiz interface.`);
+
+            // Reset button
+            event.target.innerHTML = 'Start Quiz';
+            event.target.style.background = 'linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%)';
+        }, 1000);
+    }
+
+    // Add CSS animation
+    const style = document.createElement('style');
+    style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+    document.head.appendChild(style);</script>

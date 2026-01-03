@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard - EduConnect</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #1e1e2f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      height: 100vh;
+      background-color: #2a2a40;
+      padding: 20px;
+      width: 220px;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    .sidebar h3 {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      margin: 8px 0;
+      color: #ddd;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background: #444;
+      color: #fff;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 280px;
+      padding: 20px;
+      width: calc(100% - 240px);
+    }
+
+    /* Topbar */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn:hover {
+      background: #444;
+    }
+
+    /* Cards */
+    .card {
+      background: #2a2a40;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Layout grid */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .col-half {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Progress bars */
+    .progress {
+      background: #444;
+      border-radius: 10px;
+      height: 20px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    .progress-bar {
+      height: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #000;
+      line-height: 20px;
+    }
+    .bg-success { background: #28a745; }
+    .bg-warning { background: #ffc107; color: #000; }
+    .bg-info { background: #17a2b8; }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>EduConnect</h3>
+    <a href="#" class="active">📊 Dashboard</a>
+    <a href="#">👨‍🏫 Manage Students</a>
+    <a href="#">📝 Assignments</a>
+    <a href="#">📚 Quizzes</a>
+    <a href="#">🏆 Leaderboard</a>
+    <a href="#">💬 Messages</a>
+    <a href="#">❓ Help & Support</a>
+    <a href="#">⚙️ Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Topbar -->
+    <div class="topbar">
+      <h4>Welcome, Teacher Name</h4>
+      <div class="button-group">
+        <button class="btn">👤 Profile</button>
+        <button class="btn">⚙️ Settings</button>
+      </div>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="row">
+      <!-- Class Overview -->
+      <div class="col-half">
+        <div class="card">
+          <h5>📌 Class Overview</h5>
+          <p>You are handling <b>2 Classes</b></p>
+          <ul>
+            <li>Class 6A - 30 Students</li>
+            <li>Class 6B - 28 Students</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="col-half">
+        <div class="card">
+          <h5>🔔 Notifications</h5>
+          <ul>
+            <li>5 Assignments pending grading</li>
+            <li>Quiz 2 submissions ready</li>
+            <li>New message from student</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Progress Tracking -->
+    <div class="card">
+      <h5>📈 Student Progress</h5>
+      <p>Class 6A - Math</p>
+      <div class="progress">
+        <div class="progress-bar bg-success" style="width: 70%;">70%</div>
+      </div>
+      <p>Class 6B - Science</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" style="width: 45%;">45%</div>
+      </div>
+      <p>Class 6A - History</p>
+      <div class="progress">
+        <div class="progress-bar bg-info" style="width: 90%;">90%</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

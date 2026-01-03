@@ -1,0 +1,279 @@
+
+    <div class="floating-elements" id="floatingElements"></div>
+    
+    <div class="learning-container">
+        <div class="header-section">
+            <h1 class="course-title">STEM Learning Academy 2025</h1>
+            <p class="course-subtitle">Advanced Science, Technology, Engineering & Mathematics Program</p>
+            
+            <div class="nav-tabs">
+                <button class="nav-tab active">Subjects</button>
+                <button class="nav-tab">Resources</button>
+                <button class="nav-tab">Assignments</button>
+                <button class="nav-tab">Discussion</button>
+            </div>
+            
+        </div>
+
+        <div class="subjects-grid">
+            <!-- Mathematics -->
+            <div class="subject-card" onclick="openSubject('Mathematics')">
+                <div class="subject-header">
+                    <div class="subject-icon math-icon">Ma</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Mathematics</h3>
+                        <p class="subject-subtitle">Advanced Calculus & Algebra</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill math-icon" style="width: 75%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">24</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">18</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+
+            <!-- Science -->
+            <div class="subject-card" onclick="openSubject('Science')">
+                <div class="subject-header">
+                    <div class="subject-icon science-icon">Sc</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Science</h3>
+                        <p class="subject-subtitle">Biology & Environmental</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">45%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill science-icon" style="width: 45%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">30</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">14</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+
+            <!-- Technology -->
+            <div class="subject-card" onclick="openSubject('Technology')">
+                <div class="subject-header">
+                    <div class="subject-icon tech-icon">Te</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Technology</h3>
+                        <p class="subject-subtitle">Computer Science & AI</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill tech-icon" style="width: 90%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">18</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+
+            <!-- Engineering -->
+            <div class="subject-card" onclick="openSubject('Engineering')">
+                <div class="subject-header">
+                    <div class="subject-icon eng-icon">En</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Engineering</h3>
+                        <p class="subject-subtitle">Mechanical & Design</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill eng-icon" style="width: 25%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">28</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">18h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+
+            <!-- Physics -->
+            <div class="subject-card" onclick="openSubject('Physics')">
+                <div class="subject-header">
+                    <div class="subject-icon physics-icon">Ph</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Physics</h3>
+                        <p class="subject-subtitle">Quantum & Mechanics</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill physics-icon" style="width: 60%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">22</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">13</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+
+            <!-- Chemistry -->
+            <div class="subject-card" onclick="openSubject('Chemistry')">
+                <div class="subject-header">
+                    <div class="subject-icon chem-icon">Ch</div>
+                    <div class="subject-info">
+                        <h3 class="subject-name">Chemistry</h3>
+                        <p class="subject-subtitle">Organic & Inorganic</p>
+                    </div>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="progress-text">Progress</span>
+                        <span class="progress-percentage">35%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill chem-icon" style="width: 35%"></div>
+                    </div>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">26</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">9</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15h</span>
+                            <span class="stat-label">Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn">Continue →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating elements
+      
+        // Tab functionality
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Subject card click handler
+        function openSubject(subject) {
+            const card = event.currentTarget;
+            card.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                card.style.transform = '';
+                alert(`Opening ${subject} course!\n\nThis would navigate to the detailed course content.`);
+            }, 150);
+        }
+
+        // Initialize floating elements
+        createFloatingElements();
+
+        // Animate progress bars on scroll
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.progress-fill');
+                    progressBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.subject-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>

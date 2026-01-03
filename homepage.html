@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnect — Smart Education</title>
+  <!-- Fonts  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="homepage.css" />
+</head>
+
+<body>
+  <!-- Top Header -->
+  <header class="topbar">
+    <div class="page-container topbar-row">
+      <!-- Left: Logo + App Name -->
+      <a class="brand-link" href="#">
+        <span class="brand-dot" aria-hidden="true">●</span>
+        <span class="brand-name">EduConnect</span>
+      </a>
+
+      <!-- Right: Language select + About -->
+      <div class="header-actions">
+        <label class="lang-wrap" for="langSelect">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <select id="langSelect" class="lang-select" aria-label="Language">
+            <option value="en" selected>English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+            <option value="gu">ગુજરાતી</option>
+          </select>
+        </label>
+
+        <button class="btn info-btn" id="aboutBtn" type="button" aria-label="About Us">
+          ℹ️ About Us
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Center Area -->
+  <main class="main-stage">
+    <div class="page-container two-panels">
+      <!-- Left panel: Welcome message -->
+      <section class="panel welcome-side" aria-labelledby="welcomeTitle">
+        <div class="welcome-box">
+          <h1 id="welcomeTitle" class="welcome-title" data-key="welc">Welcome to Smart Education</h1>
+          <p class="welcome-tagline" data-key="tl">
+            Learn faster with clear paths, practice sets, and progress tracking — built for students and teachers.
+          </p>
+          <ul class="welcome-points">
+            <li data-key="pt1">Learn STEM with interactive quizzes and fun games — Physics, Chemistry, Math, and more.</li>
+            <li data-key="pt2">Level up with challenges, streaks, and badges to keep motivation high.</li>
+            <li data-key="pt3">Play practice battles, review hints, and track progress as skills improve.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right panel: Big buttons + image slot -->
+      <section class="panel action-side" aria-labelledby="actionTitle">
+        <div class="actions-box">
+          <h2 id="actionTitle" class="actions-title" data-key="gs">Get Started</h2>
+
+          <div class="big-buttons">
+            <button class="btn big blue" id="signInBtn">☑️ Sign In</button>
+            <button class="btn big green" id="signUpBtn">✅ Sign Up</button>
+          </div>
+
+          <!-- Empty image space (placeholder frame) -->
+          <div class="image-slot" role="img" aria-label="">
+            <img src="https://github.com/Sumitkumar5343/localrepo/blob/main/child.jpg?raw=true"
+              alt="any  image related to site" width="504px" height="160px">
+            <!-- keep empty for now -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="info">
+      <div class="container">
+        <!-- LEFT SIDE -->
+        <div class="left">
+          <h1 data-key="stem">Learn STEM with Fun <br> Science, Tech, Engineering, Math 🚀</h1>
+          <p data-key="desc">From 🔢 Math to 🔬 Science, 💻 Technology to 🏗️ Engineering — gamified STEM learning built for you 🎮🚀
+          </p>
+
+          <div class="features">
+            <p data-key="f1">🌐 Multilingual</p>
+            <p data-key="f2">⚡ Works Offline</p>
+            <p data-key="f3">🎮 Gamified Learning</p>
+            <p data-key="f4">📊 Smart Teacher Analytics</p>
+          </div>
+
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+          <img src="https://github.com/Sumitkumar5343/localrepo/blob/main/student.jpg?raw=true"
+            alt="Learning illustration">
+          <br>
+          <button class="strtlearnbtn" id="strtlearnbtn">🚀 Start Learning For Free Now<br>Without Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="powered">Powered by <span>Gamified Learning Platform for Rural Education</span>.</p>
+    <p class="disclaimer">Disclaimer: This prototype has been developed under <span>SIH 2025</span> for educational
+      purposes.</p>
+    <p class="developed">Developed by <span>Team Radiant</span>, as part of <span>Smart India Hackathon</span> project.
+    </p>
+    <p class="org">Organization: <span>Government of Odisha</span>, <span>Electronics & IT Department</span>.</p>
+    <p class="copyright">© 2025 <span>Team Radiant</span>. All rights reserved.</p>
+    <p class="last">Last updated on: <span>20/08/2025</span></p>
+  </footer>
+
+  <script src="homepage.js"></script>
+
+</body>
+
+</html>
